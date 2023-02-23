@@ -1,0 +1,11 @@
+//database schema:
+//question:
+//  text        -> what you want to ask
+//  type        -> type of answer-possibilitis (yes/no, multiple, rather/rather not)
+//  results     -> String of results as Json or simmilar as it can differ from yes/no to an yet unknown count of possible answers
+// QuestionID
+//  valid until -> until this date you can vote, after passing this date table IPADDRESSES gets cleaned from this question (deleting all 
+//Datapoints) , maybe delete the question too (must be decided)
+//second table: IPADDRESSES
+//  ipaddress        -> ipaddress that answered a question
+// QuestionID   -> questin that got answered by this ipaddress (FK to QuestionID from question)
